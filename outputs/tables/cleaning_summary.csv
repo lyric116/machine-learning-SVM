@@ -1,0 +1,8 @@
+stage,rows_before,rows_after,removed,removed_rate
+valid target class,60000,60000,0,0.0
+valid timestamps,60000,60000,0,0.0
+valid coordinates,60000,59939,61,0.0010166666666666666
+coordinates inside DC-area bounds,59939,59939,0,0.0
+duration between 1 and 180 minutes,59939,58416,1523,0.025409165985418508
+plausible distance and speed,58416,58405,11,0.0001883045740892906
+drop duplicate ride_id,58405,58405,0,0.0
