@@ -1,0 +1,11 @@
+name: ml_svm_bikeshare
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.11
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - joblib
