@@ -1,4 +1,210 @@
+# ============================================
+# Capital Bikeshare 项目 .gitignore
+# ============================================
+
+# ============================================
+# 原始数据文件（太大，不应提交）
+# ============================================
 data/
+*.csv
+!FINAL_SUBMISSION_最终提交/03_数据文件/cleaned_stratified_sample.csv
+
+# ============================================
+# Python 相关
+# ============================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# ============================================
+# 机器学习模型文件（太大）
+# ============================================
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.pt
+*.pth
+*.ckpt
+!FINAL_SUBMISSION_最终提交/06_模型文件/svm_member_casual_pipeline.joblib
+
+# ============================================
+# 日志文件
+# ============================================
+*.log
+logs/
+*.out
+*.err
+
+# ============================================
+# 临时文件和缓存
+# ============================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================================
+# IDE 和编辑器
+# ============================================
+.vscode/
+.idea/
+*.iml
+.project
+.pydevproject
+.settings/
+
+# ============================================
+# Claude Code 相关
+# ============================================
 .codex/
 .agents/
+.claude/
+
+# ============================================
+# Matplotlib 配置
+# ============================================
 .mplconfig/
+
+# ============================================
+# 实验归档（太多太杂，不需要提交）
+# ============================================
+# 旧文档归档
+OLD_DOCUMENTS_ARCHIVE_旧文档归档/
+ARCHIVE_OLD_FILES/
+
+# 实验版本归档
+EXPERIMENTAL_ARCHIVE_实验归档/
+f1_optimization_clean/
+f1_target_optimization/
+svm_fresh_project/
+
+# 散落的旧markdown（已整理到最终提交目录）
+*_REPORT.md
+*_STATUS.md
+*_SUMMARY.md
+*_FINDINGS.md
+*_CONCLUSION.md
+PLAN.md
+PROJECT_SUMMARY.md
+OPTIMIZATION_LOG.md
+EXECUTION_SUMMARY.md
+EXTERNAL_DATA_ATTEMPT_SUMMARY.md
+FEATURE_ENGINEERING_ANALYSIS.md
+FILES_INDEX.md
+FINAL_*.md
+FREQUENCY_FEATURES_BREAKTHROUGH.md
+HONEST_FINAL_CONCLUSION.md
+INNOVATION_FINAL_REPORT.md
+MINIMAL_FEATURES_*.md
+NONLINEAR_SVM_IN_PROGRESS.md
+QUICK_START.md
+README_FINAL.md
+SINGLE_FEATURE_FINDINGS.md
+
+# ============================================
+# 大量输出日志文件（保留关键结果）
+# ============================================
+outputs/bagging_*.log
+outputs/enhanced_*.log
+outputs/experiment_*.json
+outputs/feature_selection_*.json
+outputs/frequency_*.log
+outputs/fresh_*.log
+outputs/hybrid_*.log
+outputs/minimal_*.log
+outputs/optimization_*.log
+outputs/rbf_*.log
+outputs/rf_*.log
+outputs/svm_*.log
+outputs/voting_*.log
+outputs/final_push*.log
+outputs/ultimate_*.log
+outputs/poly_*.log
+
+# ============================================
+# 其他大文件
+# ============================================
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ============================================
+# 系统文件
+# ============================================
+.env
+.env.local
+*.bak
+*.orig
+
+# ============================================
+# 编译和构建
+# ============================================
+build/
+dist/
+*.egg-info/
+
+# ============================================
+# 说明
+# ============================================
+#
+# 提交到 GitHub 的内容：
+# ✅ FINAL_SUBMISSION_最终提交/ (完整提交目录)
+# ✅ scripts/ (所有代码)
+# ✅ outputs/figures/ (图表)
+# ✅ outputs/tables/ (结果表格)
+# ✅ outputs/models/svm_member_casual_pipeline.joblib (最终模型)
+# ✅ outputs/metrics.json (性能指标)
+# ✅ outputs/processed/ (处理后数据)
+# ✅ reports/ (报告目录)
+# ✅ environment.yml (环境配置)
+# ✅ README.md (主说明)
+# ✅ .gitignore (本文件)
+#
+# 不提交的内容：
+# ❌ data/ (原始数据，太大 ~几GB)
+# ❌ 大部分.csv文件 (除了提交目录中的)
+# ❌ 大部分.joblib模型文件 (除了最终模型)
+# ❌ 所有.log日志文件
+# ❌ 实验归档目录 (f1_optimization_clean等)
+# ❌ 散落的旧markdown文档 (已整理)
+# ❌ Python缓存 (__pycache__等)
+# ❌ IDE配置文件
+# ❌ Claude Code配置
+#
+
+# generated outputs
+outputs/
+f1_optimization_clean/outputs/
+f1_target_optimization/outputs_natural/
+
+# model/cache files
+*.joblib
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# system/cache
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
